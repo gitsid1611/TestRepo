@@ -1,0 +1,24 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    display:flex;
+    margin-bottom: 50px;
+    justify-content: space-evenly;
+    background-color: rgb(22, 21, 21);
+   
+}
+
+input{
+    display: block;
+   margin-left: 40%;
+}
+
+#sub{
+    align-content: center;
+    display: block;
+}
+a{
+    color: white;
+}
