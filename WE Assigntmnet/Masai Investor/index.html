@@ -10,7 +10,7 @@
 <body>
     <div id="navbar">
         <div> <a href="backend.html"> Backend</a> </div>
-        <div> <a href="frontend.html"> Frontend</a>  </div>
+        <div> <a href="frontend.html" target="_blank"> Frontend</a>  </div>
     </div>
     <form id="investorForm">
         <input id="imageURL" type="text" placeholder="Enter Image URL">
@@ -24,8 +24,9 @@
 
 <script>
 
-document.querySelector("#investorForm")
-.addEventListener("submit",investorsFun);
+    
+
+document.querySelector("#investorForm").addEventListener("submit",investorsFun);
 
 var investorArr=JSON.parse(localStorage.getItem("investorsData")) || [];
 
@@ -41,8 +42,9 @@ function investorsFun(){
 
     investorArr.push(investorsObj);
     console.log(investorArr);
-    localStorage.setItem("investorsData",JSON.stringify( investorArr));
-
+    localStorage.setItem("investorsData",JSON.stringify(investorArr));
+    
+    window.op
 }
 
 
